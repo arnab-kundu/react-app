@@ -15,9 +15,6 @@ class Counter extends Component {
         fontWeight: "bold"
     }
     render() {
-        // dynamic attribute
-        let classes = "badge m-2 badge-"
-        classes += (this.state.count === 0) ? "warning" : "primary"
         return (
             /**
              * return() can have only one single element. It does not support multiple element so while adding another button, 
@@ -33,10 +30,17 @@ class Counter extends Component {
                 {/* inline style */}
                 <h1 style={{ fontSize: 30 }} className="badge badge-primary">Hello world</h1>
                 {/* dynamic attribute */}
-                <span className={classes}>{this.formatCount()}</span>
+                <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
                 <button>Increment</button>
             </React.Fragment>
         );
+    }
+
+    getBadgeClasses() {
+        // dynamic attribute
+        let classes = "badge m-2 badge-";
+        classes += (this.state.count === 0) ? "warning" : "primary";
+        return classes;
     }
 
     //method also can be called in {}

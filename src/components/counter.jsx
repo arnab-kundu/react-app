@@ -26,7 +26,8 @@ class Counter extends Component {
     formatCount() {
         //object destructuring react
         const { count } = this.state
-        return count === 0 ? 'Zero' : count
+        //return jsx expression
+        return count === 0 ? <h1>Zero</h1> : count
     }
 
 }

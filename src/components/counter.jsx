@@ -5,7 +5,9 @@ import React, { Component } from 'react';
 class Counter extends Component {
     // state contains data
     state = {
-        count: 0
+        count: 0,
+        //set attribute to image src
+        imageUrl: 'https://picsum.photos/200'
     }
     render() {
         return (
@@ -14,6 +16,8 @@ class Counter extends Component {
              * We have to put it in into a <div></div> or <React.Fragment></React.Fragment>
              * Using <div> create a extra <div> in UI, to avoid extra <div> use <React.Fragment>*/
             <React.Fragment>
+                {/* set attribute to image src */}
+                <img src={this.state.imageUrl} alt="" />
                 <h1>Hello world</h1>
                 <span>{this.formatCount()}</span>
                 <p>{2 + 3}</p>

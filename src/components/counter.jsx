@@ -24,7 +24,9 @@ class Counter extends Component {
 
     //method also can be called in {}
     formatCount() {
-        return this.state.count === 0 ? 'Zero' : this.state.count
+        //object destructuring react
+        const { count } = this.state
+        return count === 0 ? 'Zero' : count
     }
 
 }

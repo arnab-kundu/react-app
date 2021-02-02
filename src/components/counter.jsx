@@ -18,7 +18,9 @@ class Counter extends Component {
             <React.Fragment>
                 {/* set attribute to image src */}
                 <img src={this.state.imageUrl} alt="" />
-                <h1>Hello world</h1>
+                {/* as class is a key word in HTML. class keyword cannot be use in JSX. 
+                In place of class we have to use className in JSX */}
+                <h1 className="badge badge-primary">Hello world</h1>
                 <span>{this.formatCount()}</span>
                 <p>{2 + 3}</p>
                 <button>Increment</button>

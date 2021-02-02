@@ -9,6 +9,11 @@ class Counter extends Component {
         //set attribute to image src
         imageUrl: 'https://picsum.photos/200'
     }
+    // set style
+    styles = {
+        fontSize: 50,
+        fontWeight: "bold"
+    }
     render() {
         return (
             /**
@@ -20,7 +25,8 @@ class Counter extends Component {
                 <img src={this.state.imageUrl} alt="" />
                 {/* as class is a key word in HTML. class keyword cannot be use in JSX. 
                 In place of class we have to use className in JSX */}
-                <h1 className="badge badge-primary">Hello world</h1>
+                {/* set style */}
+                <h1 style={this.styles} className="badge badge-primary">Hello world</h1>
                 <span>{this.formatCount()}</span>
                 <p>{2 + 3}</p>
                 <button>Increment</button>

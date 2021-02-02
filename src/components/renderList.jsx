@@ -8,7 +8,9 @@ class RenderList extends Component {
         return (
             <React.Fragment>
                 <ul>
-                    {this.state.tags.map(tag => <li>{tag}</li>)}
+                    {/* unique key needed for list item, to identify item while updating in DOM. */}
+                    {/* check the warning in chrome console without key in item */}
+                    {this.state.tags.map(tag => <li key={tag}>{tag}</li>)}
                 </ul>
             </React.Fragment>
         );

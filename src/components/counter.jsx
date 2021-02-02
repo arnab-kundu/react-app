@@ -15,11 +15,16 @@ class Counter extends Component {
              * Using <div> create a extra <div> in UI, to avoid extra <div> use <React.Fragment>*/
             <React.Fragment>
                 <h1>Hello world</h1>
-                <span>{this.state.count}</span>
+                <span>{this.formatCount()}</span>
                 <p>{2 + 3}</p>
                 <button>Increment</button>
             </React.Fragment>
         );
+    }
+
+    //method also can be called in {}
+    formatCount() {
+        return this.state.count === 0 ? 'Zero' : this.state.count
     }
 
 }

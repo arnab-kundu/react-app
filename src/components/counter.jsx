@@ -27,8 +27,8 @@ class Counter extends Component {
                 In place of class we have to use className in JSX */}
                 {/* set style */}
                 <h1 style={this.styles} className="badge badge-primary">Hello world</h1>
-                <span>{this.formatCount()}</span>
-                <p>{2 + 3}</p>
+                {/* inline style */}
+                <span style={{ fontSize: 30 }}>{this.formatCount()}</span>
                 <button>Increment</button>
             </React.Fragment>
         );

@@ -3,7 +3,10 @@ import React, { Component } from 'react';
 
 //cc to generate code
 class Counter extends Component {
-    state = {}
+    // state contains data
+    state = {
+        count: 0
+    }
     render() {
         return (
             /**
@@ -12,6 +15,8 @@ class Counter extends Component {
              * Using <div> create a extra <div> in UI, to avoid extra <div> use <React.Fragment>*/
             <React.Fragment>
                 <h1>Hello world</h1>
+                <span>{this.state.count}</span>
+                <p>{2 + 3}</p>
                 <button>Increment</button>
             </React.Fragment>
         );

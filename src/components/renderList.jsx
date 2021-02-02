@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class RenderList extends Component {
     state = {
+        //make tags empty [] and test
         tags: ['tag1', 'tag2', 'tag3']
     }
 
@@ -17,6 +18,11 @@ class RenderList extends Component {
     render() {
         return (
             <React.Fragment>
+                {/* test following in chrome console 
+                 true && false
+                 true && 'hi'
+                 true && 'hi' && 1 */}
+                {this.state.tags.length === 0 && <p>Please create a tag</p>}
                 {this.renderTags()}
             </React.Fragment>
         );

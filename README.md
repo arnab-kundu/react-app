@@ -89,7 +89,8 @@ Execute below commend to run the project. After run successfully it will launch 
 
 ### Add node modules in project
 ```CLI
-
+npm install bootstrap
+npm install bootstrap@4.1.1
 ```
 
 ### Run downloaded github project
@@ -98,3 +99,28 @@ To run this project after download from github execute below commends.
 npm install
 npm start
 ```
+### Languages
+* JSX(Java Script Xml). 
+* babeljs.io/repl
+
+### Development Topics
+1. Single Component
+    1. JSX
+    2. Rendering Lists
+    3. Conditional Rendering
+    4. Handling Events
+    5. Updating the State
+2. Composing Components
+    1. Pass Data
+    2. Raise and Handle Events
+    3. Multiple Components in Sync
+        1. getBootstrap.com(1:56:20)
+        2. Lifting State Up
+    4. Functional Components
+        1. Stateless Functional Component
+        2. Destructuring Arguments
+    5. Lifecycle Hooks
+        1. Mounting Phase   
+        2. Updating Phase       
+        3. Unmounting Phase
+

@@ -86,6 +86,7 @@ Execute below commend to run the project. After run successfully it will launch 
 - [vscode-icons](https://github.com/vscode-icons/vscode-icons) set icons to files and folders.
 - [Simple React Snippets](https://github.com/burkeholland/simple-react-snippets) short hand code generator.
 - [Prettier Formatter for Visual Studio Code](https://github.com/prettier/prettier-vscode) format the code on saving the file and paste automatically.
+- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) check typo.
 
 ### Add node modules in project
 ```CLI

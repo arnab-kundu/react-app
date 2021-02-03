@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 //import App from './App';
 //import Counter from './components/counter'
-import RenderList from './components/renderList'
+//import RenderList from './components/renderList'
+import HandleEvent from './components/handleEvent'
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
     <React.StrictMode>
-        <RenderList />
+        <HandleEvent />
     </React.StrictMode>,
     document.getElementById('root')
 );

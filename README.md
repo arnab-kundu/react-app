@@ -92,6 +92,7 @@ Execute below commend to run the project. After run successfully it will launch 
 ```CLI
 npm install bootstrap
 npm install bootstrap@4.1.1
+npm i json-server
 ```
 
 ### Run downloaded github project

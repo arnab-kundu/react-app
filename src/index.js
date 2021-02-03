@@ -4,13 +4,14 @@ import './index.css';
 //import App from './App';
 //import Counter from './components/counter'
 //import RenderList from './components/renderList'
-import HandleEvent from './components/handleEvent'
+//import HandleEvent from './components/handleEvent'
+import UpdateState from './components/updateState'
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
     <React.StrictMode>
-        <HandleEvent />
+        <UpdateState />
     </React.StrictMode>,
     document.getElementById('root')
 );

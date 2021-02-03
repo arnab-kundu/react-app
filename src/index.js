@@ -1,19 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import App from './App';
+import App from './App';
 //import Counter from './components/counter'
 //import RenderList from './components/renderList'
 //import HandleEvent from './components/handleEvent'
 //import UpdateState from './components/updateState'
-import Counters from './components/counterApp/counters'
+//import Counters from './components/counterApp/counters'
 
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
     <React.StrictMode>
-        <Counters />
+        <App />
     </React.StrictMode>,
     document.getElementById('root')
 );

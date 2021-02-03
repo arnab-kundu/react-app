@@ -10,7 +10,8 @@ class Counter extends Component {
     }
 
     render() {
-        console.log(this.props.counter);
+        console.log('Counter - Rendered');
+        //console.log(this.props.counter);
         return (
             <div>
                 {this.props.children}

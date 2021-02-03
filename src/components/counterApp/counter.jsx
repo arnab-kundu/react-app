@@ -20,7 +20,7 @@ class Counter extends Component {
                 {this.props.children}
                 <span className={this.conditionalAttribute()}>{this.conditionalRendering()}</span>
                 <button onClick={this.handleIncrement} className="btn btn-primary m-2" >Increment</button>
-                <button className="btn btn-danger m-2" onClick={this.props.onDelete}>Delete</button>
+                <button className="btn btn-danger m-2" onClick={() => this.props.onDelete(this.props.id)}>Delete</button>
             </div>
         );
     }

@@ -6,6 +6,7 @@ class HandleEvent extends Component {
     }
 
     constructor() {
+        super();
         //Must call super constructor in derived class before accessing 'this'
         console.log('constructor', this)
     }

@@ -7,12 +7,11 @@ class HandleEvent extends Component {
 
     constructor() {
         super();
-        //Must call super constructor in derived class before accessing 'this'
-        console.log('constructor', this)
+        this.handleIncrement = this.handleIncrement.bind(this);
     }
 
     handleIncrement() {
-        // `this` cannot be access here. check console in chrome to see error
+        // bind 'this' with handleIncrement
         console.log('Increment CLicked', this.state.count)
     }
 

@@ -126,3 +126,13 @@ npm start
         2. Updating Phase       
         3. Unmounting Phase
 
+### Debug
+- [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en-US) extension for debug React in chrome and firefox. And stand along app for internet edge.
+
+### Prop vs State
+
+|prop|state|
+|----|-----|
+|prop include data that we give to a component | state include data that local or private to that component|
+|Parent component can access child component prop| Other component cannot access state|
+|Read only property cannot be modified| Can be modified|

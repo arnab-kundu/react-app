@@ -25,6 +25,10 @@ class Counter extends Component {
     }
 
     handleIncrement = () => {
+        // props cannot be edited. Its read only. To verify uncomment next line code, hit increment 
+        // and check console, will get error mentioned in 2nd next line.
+        // this.props.value = 0;
+        // Cannot assign to read only property 'value' of object
         this.setState({ count: this.state.count + 1 })
     }
 }

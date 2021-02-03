@@ -14,6 +14,8 @@ class Counters extends Component {
 
     handleDelete = (counterId) => {
         console.log('Delete clicked', counterId)
+        const counters = this.state.counters.filter(c => c.id != counterId)
+        this.setState({ counters: counters })
     }
 
     render() {

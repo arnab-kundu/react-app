@@ -106,7 +106,7 @@ npm start
 * babeljs.io/repl
 
 ### Development Topics
-1. Single Component
+1. Single Component Application
     1. JSX
     2. Rendering Lists
     3. Conditional Rendering

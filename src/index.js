@@ -5,13 +5,15 @@ import './index.css';
 //import Counter from './components/counter'
 //import RenderList from './components/renderList'
 //import HandleEvent from './components/handleEvent'
-import UpdateState from './components/updateState'
+//import UpdateState from './components/updateState'
+import Counters from './components/counterApp/counters'
+
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
     <React.StrictMode>
-        <UpdateState />
+        <Counters />
     </React.StrictMode>,
     document.getElementById('root')
 );

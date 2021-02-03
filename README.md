@@ -116,7 +116,7 @@ npm start
     1. Pass Data
     2. Raise and Handle Events
     3. Multiple Components in Sync
-        1. getBootstrap.com(1:56:20)
+        1. getBootstrap.com (1:56:20)
         2. Lifting State Up
     4. Functional Components
         1. Stateless Functional Component
@@ -136,3 +136,12 @@ npm start
 |prop include data that we give to a component | state include data that local or private to that component|
 |Parent component can access child component prop| Other component cannot access state|
 |Read only property cannot be modified| Can be modified|
+
+### Bootstrap
+- Click [Bootstrap](https://getbootstrap.com/) for guide line.
+- [Examples](https://getbootstrap.com/docs/5.0/examples/)
+- [Starter template](https://getbootstrap.com/docs/5.0/examples/starter-template/)
+- Right Click-> View page source
+- [Documentation]()
+- Search `navbar`
+- `Brand` 

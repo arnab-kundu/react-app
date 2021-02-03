@@ -17,6 +17,7 @@ class Counter extends Component {
         console.log(this.props);
         return (
             <div>
+                {this.props.children}
                 <span className={this.conditionalAttribute()}>{this.conditionalRendering()}</span>
                 <button onClick={this.handleIncrement} className="btn btn-primary m-2" >Increment</button>
             </div>

@@ -15,7 +15,10 @@ class COunters extends Component {
         return (
             <React.Fragment>
                 {this.state.counters.map(counter =>
-                    <Counter key={counter.id} value={counter.value} selected={true} />)}
+                    <Counter key={counter.id} value={counter.value} >
+                        {/* Children prop */}
+                        <h4>Counter #{counter.id}</h4>
+                    </Counter>)}
             </React.Fragment>
         );
     }

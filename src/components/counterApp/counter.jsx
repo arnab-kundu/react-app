@@ -16,6 +16,12 @@ class Counter extends Component {
         // And based on condition we can do API/Ajax call
     }
 
+    componentWillUnmount() {
+        console.log('Counter - Unmount');
+        // Do memory cleanup over here. Like Remove timer or listeners etc.
+        // To avoid memory leak.
+    }
+
     render() {
         console.log('Counter - Rendered');
         //console.log(this.props.counter);

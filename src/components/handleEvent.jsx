@@ -6,7 +6,8 @@ class HandleEvent extends Component {
     }
 
     handleIncrement() {
-        console.log('Increment CLicked')
+        // `this` cannot be access here. check console in chrome to see error
+        console.log('Increment CLicked', this.state.count)
     }
 
 

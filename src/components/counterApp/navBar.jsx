@@ -1,11 +1,12 @@
 // Stateless functional Component
 // Short hand to create Stateless functional Component is "sfc"
-const NavBar = (props) => {
+const NavBar = ({ totalCounters }) => {
     return (
         <nav className="navbar navbar-light bg-light">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">Navbar</a>
-                <span className="badge badge-pill badge-secondary m-2">{props.totalCounters}</span>
+                <a className="navbar-brand" href="#">Navbar{" "}
+                    <span className="badge badge-pill badge-secondary m-2">{totalCounters}</span>
+                </a>
             </div>
         </nav>
     );

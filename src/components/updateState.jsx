@@ -4,18 +4,26 @@ class UpdateState extends Component {
     state = {
         count: 0
     }
-    handleIncrement = () => {
+    handleIncrement = (some_id) => {
         // cannot update state like below
         // this.state.count++
         // Update state
         this.setState({ count: this.state.count + 1 })
         // check in chrome element tab. only span element getting updated in DOM, not all the element this is react.
+        console.log(some_id);
+    }
+
+    // cannot pass parament in method in onClick. 
+    // onClick have only the method reference.
+    // so to pass parameter in method we can do like this
+    doHandleIncrement = () => {
+        this.handleIncrement({ id: 1 })
     }
     render() {
         return (
             <React.Fragment>
                 <span className="badge badge-primary m-2">{this.state.count}</span>
-                <button onClick={this.handleIncrement} className="btn btn-secondary m-2">Increment</button>
+                <button onClick={this.doHandleIncrement} className="btn btn-secondary m-2">Increment</button>
             </React.Fragment>
         );
     }

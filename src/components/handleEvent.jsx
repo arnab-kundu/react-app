@@ -5,13 +5,9 @@ class HandleEvent extends Component {
         count: 0
     }
 
-    constructor() {
-        super();
-        this.handleIncrement = this.handleIncrement.bind(this);
-    }
-
-    handleIncrement() {
-        // bind 'this' with handleIncrement
+    // Avoid binding using arrow function
+    // arrow function don't rebind 'this'. Its inherit. 
+    handleIncrement = () => {
         console.log('Increment CLicked', this.state.count)
     }
 

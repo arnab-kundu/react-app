@@ -1,5 +1,4 @@
-// Stateless functional Component
-const NavBar = (props) => {
+function NavBar(props) {
     return (
         <nav className="navbar navbar-light bg-light">
             <div className="container-fluid">

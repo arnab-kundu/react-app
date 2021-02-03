@@ -5,6 +5,11 @@ class HandleEvent extends Component {
         count: 0
     }
 
+    constructor() {
+        //Must call super constructor in derived class before accessing 'this'
+        console.log('constructor', this)
+    }
+
     handleIncrement() {
         // `this` cannot be access here. check console in chrome to see error
         console.log('Increment CLicked', this.state.count)

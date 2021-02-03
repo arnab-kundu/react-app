@@ -14,6 +14,7 @@ class Counter extends Component {
     }
 
     render() {
+        console.log(this.props);
         return (
             <div>
                 <span className={this.conditionalAttribute()}>{this.conditionalRendering()}</span>

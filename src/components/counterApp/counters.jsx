@@ -4,7 +4,7 @@ import Counter from './counter'
 class COunters extends Component {
     state = {
         counters: [
-            { id: 1, value: 0 },
+            { id: 1, value: 5 },
             { id: 2, value: 0 },
             { id: 3, value: 0 },
             { id: 4, value: 0 },
@@ -14,7 +14,8 @@ class COunters extends Component {
     render() {
         return (
             <React.Fragment>
-                {this.state.counters.map(counter => <Counter key={counter.id} />)}
+                {this.state.counters.map(counter =>
+                    <Counter key={counter.id} value={counter.value} selected={true} />)}
             </React.Fragment>
         );
     }

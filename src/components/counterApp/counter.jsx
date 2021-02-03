@@ -9,6 +9,13 @@ class Counter extends Component {
         return this.props.counter.value === 0 ? "Zero" : this.props.counter.value
     }
 
+    componentDidUpdate(prevProps, prevState) {
+        console.log('prevProps', prevProps);
+        console.log('prevState', prevState);
+        // Here we can compare preProps with current props. 
+        // And based on condition we can do API/Ajax call
+    }
+
     render() {
         console.log('Counter - Rendered');
         //console.log(this.props.counter);

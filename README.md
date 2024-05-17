@@ -1,147 +1,70 @@
-# React
-This a sample demo app on react web app. This documentation will guide how to set up react web app in system from the beginning.
+# Getting Started with Create React App
 
-## Prerequisites software
-1. [Node.js](https://nodejs.org/en/) to install npm 3rd party library.
-2. [VSCode](https://code.visualstudio.com/download) is the code editor.
-3. [react]()
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Installation
+## Available Scripts
 
-### 1. Node.js
-To verify Node.js installation in your system type `node` in CLI and hit Enter. It will return the Node.js version.
-```CLI
-C:\Users\arnab>node
-Welcome to Node.js v14.15.3.
-```
+In the project directory, you can run:
 
-### 2. VSCode
-Installation of VSCode is pretty straight forward. Just follow the above link to download. After installation below commend should open VSCode, if not you can open it manually.
-```CLI
-> code .
-```
+### `npm start`
 
-### 3. Install react
-To install react globally execute the below commend. This is a One time operation. No need to install every time while creating a new React project.
-```CLI
-> npm install -g create-react-app
-or > npm install -g create-react-app@1.5.2 (to use the perticular react version spceified)
-or > npm install -g create-react-app@4.0.1 (to use the perticular react version spceified)
-```
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Create Project
-Execute below commend to create a new React App. This will take some time to download all dependency so have patience. It will consume around 250 MB.
-```
-> create-react-app <your-project-name>
-```
-After complete you will receive a Success message with a guide how to build and run React app.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-> Success message will be like below code snippet
-```
-Success! Created <your-project-name> at D:\Workspace_react\<your-project-name>
-Inside that directory, you can run several commands:
+### `npm test`
 
-  npm start
-    Starts the development server.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-  npm run build
-    Bundles the app into static files for production.
+### `npm run build`
 
-  npm test
-    Starts the test runner.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-  npm run eject
-    Removes this tool and copies build dependencies, configuration files
-    and scripts into the app directory. If you do this, you can’t go back!
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-We suggest that you begin by typing:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-  cd react-app
-  npm start
+### `npm run eject`
 
-Happy hacking!
-```
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### Open Project
-Execute below commend to open project in VSCode. You can open manually also.
-```
-> cd <your-project-name>
-> code .
-```
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### Run
-Execute below commend to run the project. After run successfully it will launch your app in your default browser on localhost port:3000.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-> Note: VSCode TERMINAL will open as powershell by default. Type `cmd` to change terminal into cmd and previous commends again.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-```CLI
-> npm start
-```
+## Learn More
 
-> If app not launch automatically then manually open http://localhost:3000
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### VS Code Plugins
-- [Material Icon Theme](https://github.com/PKief/vscode-material-icon-theme) set icons to files and folders.  
-  or
-- [vscode-icons](https://github.com/vscode-icons/vscode-icons) set icons to files and folders.
-- [Simple React Snippets](https://github.com/burkeholland/simple-react-snippets) short hand code generator.
-- [Prettier Formatter for Visual Studio Code](https://github.com/prettier/prettier-vscode) format the code on saving the file and paste automatically.
-- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) check typo.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Add node modules in project
-```CLI
-npm install bootstrap
-npm install bootstrap@4.1.1
-npm i json-server
-```
+### Code Splitting
 
-### Run downloaded github project
-To run this project after download from github execute below commends.
-```
-npm install
-npm start
-```
-### Languages
-* JSX(Java Script Xml). 
-* babeljs.io/repl
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Development Topics
-1. Single Component Application
-    1. JSX
-    2. Rendering Lists
-    3. Conditional Rendering
-    4. Handling Events
-    5. Updating the State
-2. Composing Components
-    1. Pass Data
-    2. Raise and Handle Events
-    3. Multiple Components in Sync
-        1. getBootstrap.com (1:56:20)
-        2. Lifting State Up
-    4. Functional Components
-        1. Stateless Functional Component
-        2. Destructuring Arguments
-    5. Lifecycle Hooks
-        1. Mounting Phase   
-        2. Updating Phase       
-        3. Unmounting Phase
+### Analyzing the Bundle Size
 
-### Debug
-- [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en-US) extension for debug React in chrome and firefox. And stand along app for internet edge.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Prop vs State
+### Making a Progressive Web App
 
-|prop|state|
-|----|-----|
-|prop include data that we give to a component | state include data that local or private to that component|
-|Parent component can access child component prop| Other component cannot access state|
-|Read only property cannot be modified| Can be modified|
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Bootstrap
-- Click [Bootstrap](https://getbootstrap.com/) for guide line.
-- [Examples](https://getbootstrap.com/docs/5.0/examples/)
-- [Starter template](https://getbootstrap.com/docs/5.0/examples/starter-template/)
-- Right Click-> View page source
-- [Documentation]()
-- Search `navbar`
-- `Brand` 
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

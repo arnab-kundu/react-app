@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Counter extends Component {
     conditionalAttribute() {
-        return this.props.counter.value === 0 ? "badge m-2 badge-warning" : "badge m-2 badge-primary";
+        return this.props.counter.value === 0 ? "btn m-2 btn-warning" : "btn m-2 btn-primary";
     }
 
     conditionalRendering() {

@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/counterApp/navBar';
 import Counters from './components/counterApp/counters';
+import Login from './components/counterApp/login';
 
 class App extends Component {
   state = {
@@ -70,6 +71,7 @@ class App extends Component {
             onDelete={this.handleDelete}
             onReset={this.handleReset} />
         </main>
+        <Login></Login>
       </React.Fragment >
     );
   }

@@ -24,7 +24,7 @@ class Counters extends Component {
     }
     render() {
         console.log('Counters - Rendered');
-        const { onDelete, onIncrement, onReset, counters } = this.props;
+        const { onDelete, onIncrement, onDecrement, onReset, counters } = this.props;
         return (
             <React.Fragment>
                 <div className='row'>
@@ -33,6 +33,7 @@ class Counters extends Component {
                         {counters.map(counter =>
                             <Counter key={counter.id} counter={counter}
                                 onIncrement={onIncrement}
+                                onDecrement={onDecrement}
                                 onDelete={onDelete} >
                                 {/* Children prop */}
                                 <h4>Counter #{counter.id}</h4>

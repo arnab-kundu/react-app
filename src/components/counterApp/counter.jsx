@@ -30,6 +30,7 @@ class Counter extends Component {
                 {this.props.children}
                 <span className={this.conditionalAttribute()}>{this.conditionalRendering()}</span>
                 <button onClick={() => this.props.onIncrement(this.props.counter)} className="btn btn-primary m-2" >Increment</button>
+                <button onClick={() => this.props.onDecrement(this.props.counter)} className="btn btn-primary m-2" >Decrement</button>
                 <button className="btn btn-danger m-2" onClick={() => this.props.onDelete(this.props.counter.id)}>Delete</button>
             </div>
         );

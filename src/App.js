@@ -3,7 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/counterApp/navBar';
 import Counters from './components/counterApp/counters';
-import Login from './components/counterApp/login';
+import Login from './components/twitter/login';
+import { useNavigate } from "react-router-dom"
+import Register from './components/sample1/register';
+import LoginSample from './components/sample1/login';
+import RegisterSample from './components/sample1/register';
 
 class App extends Component {
   state = {
@@ -71,7 +75,9 @@ class App extends Component {
             onDelete={this.handleDelete}
             onReset={this.handleReset} />
         </main>
-        <Login></Login>
+        <Login></Login> 
+        <LoginSample></LoginSample>
+        <RegisterSample></RegisterSample>
       </React.Fragment >
     );
   }

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { useNavigate } from "react-router-dom"
 
 class Login extends Component {
     state = {
@@ -32,7 +33,7 @@ class Login extends Component {
                                 onChange={(e) => { this.state.password = e.target.value }}
                             ></input>
                         </div>
-                        <button className="btn mt-3" onClick={() => console.log("Username: " + this.state.username, "Password: " + this.state.password)}>Login</button>
+                        <label className="btn mt-3" onClick={() => console.log("Username: " + this.state.username, "Password: " + this.state.password)}>Login</label>
                     </form>
                     <div className="text-center fs-6">
                         <a href="#">Forget password?</a> or <a href="#">Sign up</a>

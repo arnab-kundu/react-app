@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import '../../styles/login.css'
 
 class RegisterSample extends Component {
     state = {}

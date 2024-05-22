@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { useNavigate } from "react-router-dom"
-
+import "../../styles/login_twitter.css"
 class Login extends Component {
     state = {
         username: "",

@@ -1,0 +1,26 @@
+ul#lista-ho li {
+    display: inline-block;
+    weight: auto;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+ul#lista-ho li a {
+    color: whitesmoke;
+    font-size: 1.2em;
+    padding: 4px 10px;
+    margin: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 6px 1px #181818;
+    text-shadow: 1px 1px 3px #181818;
+    text-decoration: none;
+    background: radial-gradient(circle, rgba(147, 143, 143, 1) 16%, rgba(115, 114, 114, 1) 78%);
+}
+
+ul#lista-ho li a:hover {
+    background: radial-gradient(circle, rgba(113, 108, 108, 1) 16%, rgba(87, 86, 86, 0) 78%);
+}
+
+#menu1 {
+    text-align: center;
+}
